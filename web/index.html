@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+  <title>Projeto Almoxerifado</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    
+    * {
+      padding:0;
+      margin:0;
+      box-sizing: border-box;
+    }
+    body {
+      display:flex;
+      
+    }
+    main {
+      
+      color: white;
+      padding: 20px;
+      font-family: arial;
+      background-color: #652d90;
+      height: 100vh;
+      width: 40%;
+      display:flex;
+      flex-direction: column;
+    }
+    
+    aside {
+      
+      
+      font-family: arial;
+      width: 60%;
+      margin-top: 245px;
+      display:flex;
+      align-items: center;
+      flex-direction: column;
+     
+    }
+    aside div {
+      
+      
+      width: 400px;
+      display:flex;
+      justify-content: space-around;
+    }
+
+    button {
+      
+     
+      width: 100px;
+      height: 40px;
+      background-color:#652d90;
+      border:none;
+      border-radius:10px;
+    }
+    main div {
+
+        margin-top:200px;
+    }
+    p {
+      font-size:15px;
+      margin-top:10px;
+    }
+    #link {
+      margin-bottom: 50px;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Almoxerifado Simples</h1>
+    <div>
+    <h2>Projeto Web 2</p>
+      <p> Sistema de almoxerifado simples utilizando jsp e Servlet</p>
+    </div>
+    </main>
+  <aside>
+    <h1 id="link">Selecione a rota</h1>
+    <div>  
+      <button><a href="produtos.jsp" style="text-decoration:none; color: white;">Produto</a></button>
+      <button><a href="funcionario.jsp" style="text-decoration:none; color: white;">Funcionario</a></button>
+      <button><a href="estoque.jsp" style="text-decoration:none; color: white;">Estoque</a></button>
+    </div>
+  </aside>
+</body>
+</html>

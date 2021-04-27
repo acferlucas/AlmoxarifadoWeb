@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+  <tlib-version>1.0</tlib-version>
+  <short-name>ifpetags</short-name>
+  <uri>br.recife.edu.ifpe.customtags</uri>
+  <!-- A validator verifies that the tags are used correctly at JSP
+          translation time. Validator entries look like this: 
+       <validator>
+           <validator-class>com.mycompany.TagLibValidator</validator-class>
+           <init-param>
+              <param-name>parameter</param-name>
+              <param-value>value</param-value>
+           </init-param>
+       </validator>
+    -->
+  <!-- A tag library can register Servlet Context event listeners in
+         case it needs to react to such events. Listener entries look
+         like this: 
+      <listener>
+          <listener-class>com.mycompany.TagLibListener</listener-class> 
+      </listener>
+    -->
+    
+  <tag>
+      <name>helloWorld</name>
+      <body-content>empty</body-content>
+      <tag-class>br.recife.edu.ifpe.controller.tags.HelloTag</tag-class>
+  </tag>
+  <tag>
+      <name>carregaprodutos</name>
+      <body-content>scriptless</body-content>
+      <tag-class>br.recife.edu.ifpe.controller.tags.CarregaProdutosTag</tag-class>
+  </tag>
+  <tag>
+      <name>carregaloteentrada</name>
+      <body-content>scriptless</body-content>
+      <tag-class>br.recife.edu.ifpe.controller.tags.CarregaLoteEntrada</tag-class>
+  </tag>
+  <tag>
+      <name>carregaestoque</name>
+      <body-content>scriptless</body-content>
+      <tag-class>br.recife.edu.ifpe.controller.tags.CarregaEstoqueTag</tag-class>
+  </tag>
+  <tag>
+      <name>carregalotesaida</name>
+      <body-content>scriptless</body-content>
+      <tag-class>br.recife.edu.ifpe.controller.tags.CarregaLoteSaidaTag</tag-class>
+  </tag>
+  <tag>
+      <name>carregafuncionario</name>
+      <body-content>scriptless</body-content>
+      <tag-class>br.recife.edu.ifpe.controller.tags.CarregaFuncionarioTag</tag-class>
+  </tag>
+</taglib>
